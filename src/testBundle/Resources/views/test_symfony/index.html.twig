@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>test_symfony list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Patate</th>
+                <th>Fruits</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for test_symfony in test_symfonies %}
+            <tr>
+                <td><a href="{{ path('test_symfony_show', { 'id': test_symfony.id }) }}">{{ test_symfony.id }}</a></td>
+                <td>{{ test_symfony.patate }}</td>
+                <td>{{ test_symfony.fruits }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('test_symfony_show', { 'id': test_symfony.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('test_symfony_edit', { 'id': test_symfony.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('test_symfony_new') }}">Create a new entry</a>
+        </li>
+    </ul>
+{% endblock %}

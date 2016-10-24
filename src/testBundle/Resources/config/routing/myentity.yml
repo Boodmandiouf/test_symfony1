@@ -1,0 +1,24 @@
+myentity_index:
+    path:     /
+    defaults: { _controller: "testBundle:Myentity:index" }
+    methods:  GET
+
+myentity_show:
+    path:     /{id}/show
+    defaults: { _controller: "testBundle:Myentity:show" }
+    methods:  GET
+
+myentity_new:
+    path:     /new
+    defaults: { _controller: "testBundle:Myentity:new" }
+    methods:  [GET, POST]
+
+myentity_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "testBundle:Myentity:edit" }
+    methods:  [GET, POST]
+
+myentity_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "testBundle:Myentity:delete" }
+    methods:  DELETE

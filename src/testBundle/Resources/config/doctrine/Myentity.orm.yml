@@ -1,0 +1,11 @@
+testBundle\Entity\Myentity:
+    type: entity
+    table: null
+    repositoryClass: testBundle\Repository\MyentityRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

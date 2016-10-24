@@ -1,0 +1,18 @@
+testBundle\Entity\test_symfony:
+    type: entity
+    table: null
+    repositoryClass: testBundle\Repository\test_symfonyRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        patate:
+            type: string
+            length: 255
+        fruits:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

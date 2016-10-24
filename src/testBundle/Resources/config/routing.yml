@@ -1,0 +1,7 @@
+test_test_symfony:
+    resource: "@testBundle/Resources/config/routing/test_symfony.yml"
+    prefix:   /test_symfony
+
+test_homepage:
+    path:     /
+    defaults: { _controller: testBundle:Default:index }
