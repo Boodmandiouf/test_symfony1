@@ -1,0 +1,24 @@
+flight_index:
+    path:     /
+    defaults: { _controller: "testBundle:Flight:index" }
+    methods:  GET
+
+flight_show:
+    path:     /{id}/show
+    defaults: { _controller: "testBundle:Flight:show" }
+    methods:  GET
+
+flight_new:
+    path:     /new
+    defaults: { _controller: "testBundle:Flight:new" }
+    methods:  [GET, POST]
+
+flight_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "testBundle:Flight:edit" }
+    methods:  [GET, POST]
+
+flight_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "testBundle:Flight:delete" }
+    methods:  DELETE

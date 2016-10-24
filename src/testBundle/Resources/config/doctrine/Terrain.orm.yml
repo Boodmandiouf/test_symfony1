@@ -1,0 +1,11 @@
+testBundle\Entity\Terrain:
+    type: entity
+    table: null
+    repositoryClass: testBundle\Repository\TerrainRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

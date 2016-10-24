@@ -9,3 +9,15 @@ app:
 test_myentity:
         resource: "@testBundle/Resources/config/routing/myentity.yml"
         prefix:   /myentity
+
+test_flight:
+        resource: "@testBundle/Resources/config/routing/flight.yml"
+        prefix:   /flight
+
+test_reservation:
+        resource: "@testBundle/Resources/config/routing/reservation.yml"
+        prefix:   /reservation
+
+test_terrain:
+        resource: "@testBundle/Resources/config/routing/terrain.yml"
+        prefix:   /terrain

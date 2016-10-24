@@ -1,0 +1,11 @@
+testBundle\Entity\Reservation:
+    type: entity
+    table: null
+    repositoryClass: testBundle\Repository\ReservationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

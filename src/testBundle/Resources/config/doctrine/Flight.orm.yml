@@ -1,0 +1,11 @@
+testBundle\Entity\Flight:
+    type: entity
+    table: null
+    repositoryClass: testBundle\Repository\FlightRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
