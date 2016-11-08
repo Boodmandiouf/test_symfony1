@@ -8,4 +8,26 @@ testBundle\Entity\Terrain:
             id: true
             generator:
                 strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        icao:
+            type: string
+            length: '4'
+        latitude:
+            type: float
+        longitude:
+            type: float
+        city:
+            type: string
+            length: 255
+        country:
+            type: string
+            length: 255
     lifecycleCallbacks: {  }
+
+    oneToMany:
+        departures:
+          targetEntity: testBundle\Entity\Flight
+          mappedBy: departure

@@ -1,0 +1,18 @@
+testBundle\Entity\User:
+    type: entity
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
+
+    manyToMany:
+        reservations:
+            targetEntity: testBundle\Entity\Reservation
+            inversedBy: passengers

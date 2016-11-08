@@ -8,4 +8,23 @@ testBundle\Entity\Flight:
             id: true
             generator:
                 strategy: AUTO
+    fields:
+        arrival:
+            type: string
+            length: '4'
+        pilot:
+            type: string
+            length: 255
+            nullable: true
+        freeSeats:
+            type: integer
+            nullable: true
+        takeofTime:
+            type: datetime
+            nullable: true
     lifecycleCallbacks: {  }
+
+    manyToOne:
+        departure:
+            targetEntity: testBundle\Entity\Terrain
+            inversedBy: departures

@@ -9,3 +9,8 @@ testBundle\Entity\Reservation:
             generator:
                 strategy: AUTO
     lifecycleCallbacks: {  }
+
+    manyToMany:
+        passengers:
+            targetEntity: User
+            mappedBy: reservation
