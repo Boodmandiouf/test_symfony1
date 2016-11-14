@@ -4,6 +4,34 @@ parameters:
 #    parameter_name: value
 
 services:
+    app.admin.terrain:
+        class: testBundle\Admin\TerrainAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Add/Remove Terrain", label: "Terrain" }
+        arguments:
+            - ~
+            - testBundle\Entity\Terrain
+            - ~
+    app.admin.flight:
+        class: testBundle\Admin\FlightAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Add/Remove Flight", label: "Reservation" }
+        arguments:
+            - ~
+            - testBundle\Entity\Flight
+            - ~
+    app.admin.user:
+        class: testBundle\Admin\UserAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Add/Remove User", label: "User" }
+        arguments:
+            - ~
+            - testBundle\Entity\User
+            - ~
+
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+# src/WCS/CoavBundle/Resources/config/services.yml
+

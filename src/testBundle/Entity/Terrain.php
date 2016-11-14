@@ -15,14 +15,7 @@ class Terrain
         return $this->name;
     }
 
-
-
-
-
-
-
-
-
+    
     // YAML GENERATED CODE
 
     /**
